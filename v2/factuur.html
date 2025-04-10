@@ -1,0 +1,179 @@
+<div class="invoice-container-wrap">
+    <div class="invoice-container">
+        <main>
+            <div class="themeholy-invoice invoice_style7">
+                <div class="download-inner" id="download_section">
+                    <header class="themeholy-header header-layout5">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-auto">
+                                <div class="header-logo"><img alt="Logo"
+                                                              src="https://my.billit.be/File/5f93fb6d-2607-47f4-a403-379beee26c1c"
+                                                              style="width: 200px"/></div>
+                            </div>
+
+                            <div class="col-auto">
+                                <h1 class="big-title">FACTUUR</h1>
+                                <span>$Order.OrderNumber$</span></div>
+                        </div>
+                    </header>
+
+                    <div class="row gx-0">
+                        <div class="col-4">
+                            <div class="address-box address-left"><b>Klant:</b>
+
+                                <address>
+                                    <div>$Customer.CompanyName$</div>
+
+                                    <div>$Customer.ContactFullName$</div>
+
+                                    <div>$Customer.StreetAndNumber$</div>
+
+                                    <div>$Customer.ZipCode$ $Customer.City$</div>
+
+                                    <div>$Customer.VAT$</div>
+                                </address>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <div class="address-box address-middle"><b>Leveradres:</b>
+
+                                <address>
+                                    <div>$Customer.CompanyName$</div>
+
+                                    <div>$Customer.NameDelivery$</div>
+
+                                    <div>$Customer.StreetAndNumberDelivery$</div>
+
+                                    <div>$Customer.ZipCodeDelivery$ $Customer.CityDelivery$</div>
+
+                                    <div>$Customer.VAT$</div>
+                                </address>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <div class="address-box address-right"><b>Verkoper:</b>
+
+                                <address>
+                                    <div>$Me.CompanyName$</div>
+
+                                    <div>$Me.StreetAndNumber$</div>
+
+                                    <div>$Me.ZipCode$ $Customer.City$</div>
+
+                                    <div>$Me.VAT$</div>
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+
+                    <table class="invoice-table table-style3">
+                        <tbody>
+                        <tr>
+                            <th>$Label.CustomerNumber$:</th>
+                            <td>$Customer.Nr$</td>
+                            <th>$Label.Date$:</th>
+                            <td>$Order.OrderDate$</td>
+                        </tr>
+                        <tr>
+                            <th>$Label.YourReference$:</th>
+                            <td>$Order.YourReference$</td>
+                            <th>$Label.DeliveryDate$:</th>
+                            <td>$Order.DeliveryDate$</td>
+                        </tr>
+                        <tr>
+                            <th>$Label.OGM$:</th>
+                            <td>$Order.OGM$</td>
+                            <th>$Label.ExpiryDate$:</th>
+                            <td>$Order.ExpiryDate$</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="invoice-table table-stripe3 table2">
+                        <thead>
+                        <tr>
+                            <th>$Label.Description$</th>
+                            <th>$Label.UnitPrice$</th>
+                            <th>$Label.Count$</th>
+                            <th>$Label.Total$</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>$Line.Description$</td>
+                            <td>$Line.UnitPriceIncl$</td>
+                            <td>$Line.Quantity$</td>
+                            <td>$Line.TotalIncl$</td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                            <td colspan="3"><b>$Label.Total$ $Label.Excl$</b></td>
+                            <td>$Order.TotalExcl$</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><b>$Label.TotalVAT$:</b></td>
+                            <td>$Order.TotalVAT$</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><b>$Label.Total$ $Label.Incl$</b></td>
+                            <td>$Order.TotalIncl$</td>
+                        </tr>
+                        </tfoot>
+                    </table>
+
+                    <p class="table-title"><b>Payment Details:</b></p>
+
+                    <table class="invoice-table table-stripe3 style4">
+                        <thead>
+                        <tr>
+                            <th>Company name</th>
+                            <th>Date</th>
+                            <th>Transaction ID</th>
+                            <th>Amount</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Invar Internet Point</td>
+                            <td>27/07/2022</td>
+                            <td>IN2354687865</td>
+                            <td>430.00</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="row justify-content-between">
+                        <div class="col-auto"><b>Cost Per Person:</b>
+
+                            <p class="mb-0">Per Person 190.00 per night included<br/>
+                                fee &amp; take.</p>
+                        </div>
+
+                        <div class="col-auto">
+                            <table class="total-table2">
+                                <tbody>
+                                <tr>
+                                    <th>Paid:</th>
+                                    <td>690.00</td>
+                                </tr>
+                                <tr>
+                                    <th>Balance Due:</th>
+                                    <td>00.00</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <p class="company-address style2"><b>Invar Inc:</b><br/>
+                        12th Floor, Plot No.5, IFIC Bank, Gausin Rod, Suite 250-20, Franchisco USA 2022.</p>
+
+                    <p class="invoice-note mt-3">&nbsp;</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
